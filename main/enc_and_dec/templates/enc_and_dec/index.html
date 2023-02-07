@@ -1,0 +1,43 @@
+{% extends 'enc_and_dec/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'enc_and_dec/style.css' %}">
+    <link rel="stylesheet" href="{% static 'enc_and_dec/style.css' %}">
+
+</head>
+<body >
+    
+    {% block body%}
+    
+   
+        <div class="row padd" >
+            
+            <div  class="col-md-4 offset-md-2 pt-5">
+
+                <a href="/main/encryption" class="btn btn-secondary">Encrypt</a>
+            </div>
+
+            <div  class="col-md-4 offset-md-2 pt-5">
+                <a href="/main/decryption" class="btn btn-secondary">Decrypt</a>
+            </div>
+            
+              <div class="col-md-4 offset-md-2 pt-5">
+                <a href="/main/playground" class="btn btn-success">Play a Game</a>
+            </div>
+            <div class="col-md-4 offset-md-2 pt-5">
+                <a href="tel:" class="btn btn-success">Call Me</a>
+            </div>  
+        </div>
+    
+    {% endblock %}
+
+    
+    
+</body>
+</html>

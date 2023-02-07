@@ -1,0 +1,91 @@
+{% extends 'enc_and_dec/base.html' %}
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    
+    <link rel="stylesheet" href="{% static 'enc_and_dec/style.css' %}">
+
+</head>
+
+<body >
+    
+    {% block body%}
+   
+    <div class="row padd">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <table>
+                <tr>
+                    <th id="none" class="test_1">Encryption1_Text</th>
+                    <td><input  class="btn btn-primary" type="file" name="file1"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption1_Key</th>
+                    <td><input class="btn btn-primary" type="file" name="file2"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption2_Key</th>
+                    <td><input class="btn btn-primary" type="file" name="file3"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption2_SuperKey</th>
+                    <td><input class="btn btn-primary" type="file" name="file4"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption2_Text</th>
+                    <td><input class="btn btn-primary" type="file" name="file5"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption3_Key</th>
+                    <td><input class="btn btn-primary" type="file" name="file6"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption3_Text</th>
+                    <td><input class="btn btn-primary"  type="file" name="file7"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption4_DigitalSignature</th>
+                    <td><input  class="btn btn-primary" type="file" name="file8"></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption4_Key</th>
+                    <td><input class="btn btn-primary" type="file"  name="file9"></td>
+                </tr>
+                <tr>
+                    <th  id="none" class="test_1">Encryption4_Secret</th>
+                    <td><input class="btn btn-primary" type="file" name="file10" ></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption4_SuperKey</th>
+                    <td><input class="btn btn-primary" class="btn btn-primary" type="file" name="file11" ></td>
+                </tr>
+                <tr>
+                    <th id="none" class="test_1">Encryption4_Text</th>
+                    <td><input class="btn btn-primary"  type="file" name="file12" ></td>
+                </tr>
+                <tr>
+                    <td><input class="btn btn-success" type="submit" value="Decrypt"></td>
+                </tr>
+            </table>
+            
+            
+          
+            
+          </form>
+        
+    </div>
+ 
+    {% endblock %}
+
+  </body>
+
+</html>

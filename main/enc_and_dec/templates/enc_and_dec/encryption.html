@@ -1,0 +1,49 @@
+{% extends 'enc_and_dec/base.html' %}
+{% load static %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    {% comment %} <link rel="stylesheet" href="{% static 'enc_and_dec/style.css' %}"> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'enc_and_dec/style.css' %}">
+
+</head>
+
+<body >
+    
+    {% block body%}
+   
+    <div class="row padd">
+        <div class="col-md-4 offset-md-2 pt-5">
+            {% comment %} <div class="btn btn-secondary"> {% endcomment %}
+                {% comment %} <h4>Upload file</h4>  {% endcomment %}
+        {% comment %} </div> {% endcomment %}
+            
+        </div>
+            <form action="{% url "encryption"%}"method="post"  enctype="multipart/form-data">    
+                {% csrf_token %}
+                
+                {{form.file}}
+            
+                <p><input  class="btn btn-secondary" type="submit" value="Upload"/>Upload</input></p>
+            </form>
+        {% comment %} <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-success" type="submit">Upload</button>
+        </form> {% endcomment %}
+        </div>
+        
+    </div>
+ 
+    {% endblock %}
+
+  </body>
+
+</html>

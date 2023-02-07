@@ -1,0 +1,91 @@
+body{
+  background-image: url('wp4770078.webp') !important;
+  background-size: cover !important;
+  height: 100vh !important;
+
+}
+.no-underline {
+    text-decoration: none;
+  }
+.link-spacing {
+margin-right: 100px;
+}
+.padd{
+   /* background-color: #8ebf42; 
+  color: #ffffff;  */
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  line-height: 30px;
+} 
+.noback{
+background-image: none !important;
+
+}
+
+.test_1{
+  border-radius:0.25rem;
+  text-align:center;
+  color:white;
+  background-color:purple; 
+  height:38px;
+  width:345px
+}
+#none{
+  border-radius: 0%;
+  /* background-color: aliceblue; */
+}
+.myclass{
+  font-family: 'Times New Roman';
+  font-size: larger;
+  
+}
+
+.padd_1{
+  /* background-color: #8ebf42;
+  color: #ffffff; */
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  line-height: 30px;
+} 
+
+/* .page1{
+ 
+  
+  background-image: url('Hybrid Shield.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
+  width: 100vw!important;
+  
+/* } */
+/* .page2{
+  
+  background-image: url('DALL·E 2023-02-06 17.28.43 - cryptography.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
+}
+#page3{
+  
+  background-image: url('DALL·E 2023-02-06 17.28.43 - cryptography.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  height: 100vh !important;
+} */ 
+.btn{
+  background-color: purple;
+  border: none;
+  color: white;
+  font-size: larger;
+  border-radius: 10%;
+}
